@@ -1,3 +1,3 @@
-.PHONY:lint
+.PHONY: lint
 lint:
-	shellcheck -x -P SCRIPTDIR bin/hello.sh lib/log.sh
+	shellcheck -x -P SCRIPTDIR bin/*.sh lib/*.sh
