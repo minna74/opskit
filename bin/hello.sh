@@ -30,3 +30,6 @@ esac
 log_info "installation de nginx"
 log_warn "pkg py a mettre a jour" 
 log_error "serveur ne repond pas"
+log_info; echo $?
+
+
