@@ -1,0 +1,19 @@
+name: CI pipeline
+on:
+  push:
+    branches: 
+      - main
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout repo
+        uses: actions/checkout@v4
+ 
+      - name: tester la qualité du code avec make lint
+        run: make lint
+        
+      
